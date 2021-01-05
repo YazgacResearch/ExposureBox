@@ -1,0 +1,47 @@
+unit Tools;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation;
+
+function ShowMessageDialog(const TheMessage: String; const Buttons: Boolean = False): Integer;
+
+implementation
+
+uses FMX.DialogService;
+
+function ShowMessageDialog(const TheMessage: String; const Buttons: Boolean = False): Integer;
+var
+  ButtonSelected: Integer;
+begin
+  if not Buttons then
+  begin
+    TDialogService.MessageDialog(TheMessage, TMsgDlgType.mtInformation, [TMsgDlgBtn.mbOk], TMsgDlgBtn.mbOk, 0, nil);
+    ButtonSelected := 1;
+  end
+  else
+  begin
+    TDialogService.MessageDialog('Choose a button:', System.UITypes.TMsgDlgType.mtInformation,
+      [System.UITypes.TMsgDlgBtn.mbYes, System.UITypes.TMsgDlgBtn.mbNo, System.UITypes.TMsgDlgBtn.mbCancel],
+      System.UITypes.TMsgDlgBtn.mbYes, 0,
+      // Use an anonymous method to make sure the acknowledgment appears as expected.
+      procedure(const AResult: TModalResult)
+      begin
+        case AResult of
+          { Detect which button was pushed and show a different message }
+          mrYES:
+            ButtonSelected := 1;
+          mrNo:
+            ButtonSelected := -1;
+          mrCancel:
+            ButtonSelected := 0;
+        end;
+      end);
+  end;
+  Result := ButtonSelected;
+end;
+
+end.

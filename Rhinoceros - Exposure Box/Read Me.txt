@@ -1,0 +1,11 @@
+Exposure Box - Version 0.1
+
+Top
+	1.-	4 Black Light (T5 8W)
+	2.-	2 Electronic Ballast (Dual 8W)
+
+Bottom
+	1.-	4 Black Light (T5 8W)
+	2.-	2 Electronic Ballast (Dual 8W)
+	3.-	1 Fuse (800mA)
+	4.-	1 Power Input (220V nominal, Earth not using)

@@ -1,0 +1,16 @@
+program ExposureBox;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Main in 'Main.pas' {MainForm},
+  Tools in 'Tools.pas',
+  Common.FMX.VirtualKeyboardService in 'Common.FMX.VirtualKeyboardService.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+end.

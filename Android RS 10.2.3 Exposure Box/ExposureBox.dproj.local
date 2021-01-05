@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.042,D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Tools.pas=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.049,C:\Users\Oktay\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Exposure_Box.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Common.FMX.VirtualKeyboardService.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.239,D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Exposure_Box.dproj=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\ExposureBox.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.905,D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Common.FMX.VirtualKeyboardService.pas=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.426,=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.266,=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.900,=C:\Users\Oktay\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.567,C:\Users\Oktay\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Main.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.567,C:\Users\Oktay\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Main.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="ZLJBCEAQMBEYTW7P"/>
+		<PmacOs10.15.5 iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

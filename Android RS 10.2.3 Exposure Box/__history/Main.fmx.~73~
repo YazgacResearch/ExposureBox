@@ -1,0 +1,394 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Main Form'
+  ClientHeight = 616
+  ClientWidth = 360
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = MainFormOnClose
+  OnKeyUp = MainFormOnKeyUp
+  OnShow = MainFormOnShow
+  DesignerMasterStyle = 3
+  object MainFormToolBar: TToolBar
+    Size.Width = 360.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbarstyle'
+    TabOrder = 1
+    object ApplicationCloseButton: TSpeedButton
+      Align = Right
+      Position.X = 312.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'deletetoolbutton'
+      Text = 'ApplicationCloseButton'
+      OnClick = ApplicationCloseButtonOnClick
+    end
+    object ApplicationTitleLabel: TLabel
+      Align = HorzCenter
+      Position.X = 117.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'labelstyle'
+      Text = 'Exposure Box'
+      TabOrder = 1
+    end
+    object ApplicationIconImage: TImage
+      MultiResBitmap.Height = 36
+      MultiResBitmap = <
+        item
+          Width = 36
+          Height = 36
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+            98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            09B9494441545847ED577B7054D519FFDD7BF7BD9B902C4960098F4408848477
+            78259D42918295C11A18A483C38CD85250512A5503A9063B3263053B6D69994A
+            6D3B1DA5A3A5C848C7F22A20B5A904121920818480900748DEAFCDEEDEDDBBF7
+            D1EFDCECDDDC84888EADFFF5377BF69C7BEE39DFF99DEFFBCE77BE8BFFE30BC0
+            C56A1D5BB66C796AD1A2450FDC696A922C82A064270BEA9F2EB6727F6E1B99EB
+            718F485055310A44E8174197BF17599E90FD8579A35AEDB2582D0136555507C8
+            FB02F0A9A9A9F6DADADA8AE2E2E25DF44C224C58BB766D91360877229A36675F
+            507395B46B235F6CD246BD50ABF99EAAD0B0EA8836EE076F6A57AED6C646FE77
+            282929D913A3013E565B162E5CB88C3542C120FD2B387AB91EA34A4A5171B11E
+            CE483B547F0B94EE209A9A031825DCC4E127A72067D24484C31104694E2814FA
+            D2858D67251008B025515858B88AAAB1AC6D104A20A26ED670B91D3879ED0E96
+            BD779B1E92E149B3427569905D2EB4C0868C94269C289E83DCBC7C44A4285455
+            01CFF3E038EE4B1586C1CF168BC54155126B1B84547AA7B0C6F12BB7B0E42F8D
+            80C70B5B8A1DAA4586E4B4A25303329C3538B9390B39D3E7428ACA5015F92B91
+            612005E835832CCB6C6D7D7D8390E67340FD8CC63CF80E69864F82D565A56E05
+            92DD86A0A42053A8C4B1EF8FC1F8DCD9881219458EC685DF0B6642E6F143CCD5
+            3B0C42C2C1EB01DB92BDEDD0643293C3060B9150382BE4A08C74B112C71FCDC0
+            A4E9F3202B2AED4E25CD08A46A1E0E879D8A235EAC568116E375CD998B018318
+            D390A125455118997E42562BD20FF464E636D48731DC628320CA40D402A51718
+            1DAAC6E9D5639135250F8AAAEA66629BB3DB2C44C886E6AE084E5675E0F8C556
+            34B404200856D849AB8335321843BCEF271425FBB892C6593D5204BC18061FB6
+            42EC5091D679112756A6232BE63312C51FDA0D6DC086567F141BFE7015594515
+            58F27205BEF3F2594CF8D129ACF859296A6F75D3182B8D25D3D27856CC3EC360
+            D6500CFD84081CA78910A2017021055D9D32C646AAF0E1F77CC89E3617112223
+            4725A824C0E974A2E67600D9CF96E1F7FB3F257F0A232545C0F0541BAC360E87
+            0ED5227BD95B387AE13699D0C91C5627742FDC65321D0D414E0DF8D1DA19A080
+            50897FAC4B47EEAC025D3332698EA230DC2E0BFCA130EE7FF10CBADAFD1839C1
+            81040B2D264B10D428784942E26827BEB538030F6D38806B4D5DF0785CA4097D
+            D1B8560CCD7CBE86348D5723225ABA3A91E1BE8A631BC79003CFA71B221A3F4D
+            7DBBB4E1B5FD57D17CA30D234691C387C3B492045E93110852C0AB6FC5AEC767
+            E0F4AF1EC6F8F14978F6E7A7F425C88563CBF41330B7498B8C8CCE45FFB390BD
+            DB7A0218EDAEC7E167723079463E42628406F65D2F6CB2939C588E0471A8FC16
+            90C24311437422C3E05409BDBD0184EA5AF08BA2026C5C9EABCF295E370747CB
+            3E45475737DC14C70C30590619332942BF86E410B89CE4008E3C978F1C325330
+            24D269EAD38C31C946429BBAC2E8F00760A760A92A119210452F5DB262632BF6
+            FC6401B6AC9C81406F0F342988FC9C547036A0BAAE9D820A3506C14CC66EB70F
+            F221D9AF6C5A6C53A7E6CD859F76CBCCC460DE0D79342C9C069E882831CD047B
+            7A1126CDEC295E804D8533D0D3DD0591CCCCF11C9930020132C534A69D7E8D98
+            65C6659BD0470868B149E15AD660716628889479F8D2DCC848A665BAFC081271
+            B1A1056FFCF4DBD8B462169DCC76BADB5804A7F916178E9CBD010B6970E6A411
+            8892B3DF0B3162260D515F94D9C004F34E186495FE38271E5B9409D435B11978
+            F7F587F044E12C74B4B521CCC8D066468E488642EFB6BF7A101B1F207F121C3A
+            510386DC41F2073AB55E737CDCF3CC440CF0020F31D88B2756CD426EC168843F
+            6BC5C30BEE636F28060D836F64327C3E1F992C8229CB5FC3F0E14EEC7C6E3954
+            8A538322F23D6110E20C12E67A00316A4B323D6B1C3EF9E33ACC999A0657F656
+            3CFAD2DBD8F74105DE397C1E4FEFDC0FD7D4ADE8A5035177623B5D2F2E04C3D1
+            BB649A8BD14F186032DE9C7E1A0307C36AB5A0271885CDEE40F9BEA7F19B571F
+            C199CA466CFBDD877A3971EE2676BD5488DBC7B6232121414FC08CF4C4C050B2
+            A92F6E326364C6EEDDBBFFBE79F3E6DCCECECEB810560441880DE9874237BECD
+            4A37BD93E5742A222C26D1420E4AE2C869E83A8920CC4E9B3E9A16891162D19E
+            8D330A7BF67ABD282B2B0B1414143C4843FE6D686800D8600366210CACE6E958
+            ABB429968E4628856597ADCD6ED7233BEB8B46298B8C6DC8206396C130A86D70
+            EFF721D28ADE690C34043042ECDA306A733FAB597EC4628F48BEC2123FE3BD59
+            062B6CBCB96F08E8EBC77D8806C5591A93CC138D6726D820671035DE197DE677
+            46DB1863C0FC2C49125B5BE77297C958E295E0B2EB83AD160102298E298FB559
+            FA91401F010E3BCB75FA88B92912DB287394A2ECAA01123D0EBD16049A473593
+            63B759F5F909092ECA181C8852F0F4909C44CA044CD015123719A5247A475B7B
+            3BCA2F37C0EBE1D1495703E88AB0F2327A2832277B049CADAC43734B2BBCC36C
+            F0383954D0E7D2ED967678939D244C46E927D7D88EF5AB85D50C62A8172EBB8A
+            0B55D7F1AF73D5484D4941556D032A2AAFE9EFCDB0C46A2EC1CD53A0A7AF8E6A
+            9666D0F550DD8B886A45A03E08520069CD811BED017CDC60071A39ACB104D1D0
+            A5E1E33AD2E675112BD52E1CBFD0017F20445F2A419CB9DC8C7993539197E5C5
+            6FDFAF41F99526DC69E9C686C25C844F5FC291D25A0444091DA21BF7A5263165
+            0C30193F4C90F8930D40B3968EEC4C1F8EDC48C4E21C272EB57A70BADE8DA963
+            EC38D368C7D61599B87F663ADE2E97719E32916D2B33313B271D6F9EEEC484D1
+            C9484A4CA29327A2EA861F92E6C0B0A42454DFEC455D63046F941462FDEA0578
+            E5F55204425678537DD8FBD71ABA97F45B6BA0C9421418492EDA28573E76A10D
+            2BA76AA869EC414AA215937C769C27A182DD85F74E5DC6A9F29BC89F340C2E5E
+            C29EFD65F8DB89F3989D99004E6CC75BEF97E1D7FB2B317B4222F6BEFB4F3CF3
+            CA015CA9BA83BC095EA47B9941244CFF46160E965EC747E76AF0FCE3B3E1A034
+            9E716044E21A0AC94E6E1C8D2F9C1CC144FA481B9F14468FECC2B26C058F4C93
+            11529D7A76D82A2562DC080F168F97B06C9A0B8DDD564C1E9B84350BBD08CA36
+            CCCBF662F3EA69F8F1DA699839310DCDE486CF3F391F6BBE3B51FF9EF3935FEE
+            DC3417DB1ECBC392F999F8E60C1F0556919131DC4747D6FAF5EB2BE8447C2EDA
+            829AF6C11525F6F4BFC58E1D3BC85990CF88E86A222452F9615151D1F6A54B97
+            268A22658C74A4198C48CBCE32BBEE2C3CC50EA32F06733436C3FC6CB48D9A5D
+            4FECC3F2D2A54B724949C92E5AF397D4DD6E969C46650195C954189B3E465F1F
+            D8DA2CE5B949E5232A8D54E21A3283D972A8FEAF0B7DF9B20EE03F917D2367EE
+            145B1B0000000049454E44AE426082}
+          FileName = 
+            'D:\Products\Exposure Box\Android RS 10.2.3 Exposure Box\Icons\ex' +
+            'posure-icon-36x36.png'
+        end>
+      Align = Left
+      Size.Width = 36.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object DiscoverPanel: TPanel
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ConnectButton: TButton
+      Align = FitLeft
+      Size.Width = 305.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Scanning...'
+      OnClick = ConnectButtonOnClick
+    end
+    object AnimatedIndicator: TAniIndicator
+      Enabled = True
+      Position.X = 312.000000000000000000
+      Size.Width = 38.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object WaitTimer: TTimer
+    OnTimer = WaitTimerOnTimer
+    Left = 168
+    Top = 520
+  end
+  object CommonTabControl: TTabControl
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 530.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'tabcontrolstyle'
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 4
+    TabPosition = Bottom
+    Sizes = (
+      360s
+      481s
+      360s
+      481s)
+    object ControlTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 180.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Control'
+      ExplicitSize.cx = 180.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object TopBlackButton: TButton
+        Position.X = 24.000000000000000000
+        Position.Y = 344.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Top Black         ON'
+        TextSettings.WordWrap = True
+        OnClick = TopBlackButtonOnClick
+      end
+      object TopRedButton: TButton
+        Position.X = 216.000000000000000000
+        Position.Y = 344.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Top Red         ON'
+        TextSettings.WordWrap = True
+        OnClick = TopRedButtonOnClick
+      end
+      object BottomBlackButton: TButton
+        Position.X = 24.000000000000000000
+        Position.Y = 408.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Bottom Black ON'
+        TextSettings.WordWrap = True
+        OnClick = BottomBlackButtonOnClick
+      end
+      object BottomWhiteButton: TButton
+        Position.X = 216.000000000000000000
+        Position.Y = 408.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Bottom White ON'
+        TextSettings.WordWrap = True
+        OnClick = BootomWhiteButtonOnClick
+      end
+      object TimerGroupBox: TGroupBox
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 313.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Exposure Timer'
+        TabOrder = 4
+        object DurationLabel: TLabel
+          Position.X = 8.000000000000000000
+          Position.Y = 32.000000000000000000
+          Text = 'Duration : '
+          TabOrder = 0
+        end
+        object DurationEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          KeyboardType = NumberPad
+          ReturnKeyType = Done
+          FilterChar = '0123456789.'
+          Text = '1'
+          Position.X = 96.000000000000000000
+          Position.Y = 24.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          KillFocusByReturn = True
+        end
+        object UnitComboBox: TComboBox
+          Items.Strings = (
+            'ms'
+            's'
+            'm'
+            'h')
+          ItemIndex = 0
+          Position.X = 248.000000000000000000
+          Position.Y = 24.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+        object TopBlackCheckBox: TCheckBox
+          IsChecked = True
+          Position.X = 8.000000000000000000
+          Position.Y = 72.000000000000000000
+          TabOrder = 3
+          Text = 'Top Black'
+        end
+        object BottomBlackCheckBox: TCheckBox
+          Position.X = 8.000000000000000000
+          Position.Y = 104.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Bottom Black'
+        end
+        object TopRedCheckBox: TCheckBox
+          Position.X = 8.000000000000000000
+          Position.Y = 136.000000000000000000
+          TabOrder = 5
+          Text = 'Top Red'
+        end
+        object BottomWhiteCheckBox: TCheckBox
+          Position.X = 8.000000000000000000
+          Position.Y = 168.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'Bottom White'
+        end
+        object ExposureButton: TButton
+          Position.X = 80.000000000000000000
+          Position.Y = 256.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'Run'
+          OnClick = ExposureButtonOnClick
+        end
+        object ProtectCheckBox: TCheckBox
+          Position.X = 8.000000000000000000
+          Position.Y = 216.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = 'Protect Initial State'
+        end
+      end
+    end
+    object DebugTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 180.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Debug'
+      ExplicitSize.cx = 180.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object DebugMemo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        CanFocus = False
+        Size.Width = 360.000000000000000000
+        Size.Height = 424.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'memostyle'
+        TabOrder = 0
+        OnMouseDown = DebugMemoOnMouseDown
+        Viewport.Width = 352.000000000000000000
+        Viewport.Height = 416.000000000000000000
+      end
+      object DebugEditPanel: TPanel
+        Align = Top
+        Size.Width = 360.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'panelstyle'
+        TabOrder = 1
+        object DebugEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          Size.Width = 360.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          OnKeyUp = DebugEditOnKeyUp
+          OnEnter = DebugEditOnEnter
+          OnExit = DebugEditOnExit
+        end
+      end
+    end
+  end
+  object HeartBeat: TTimer
+    Interval = 20000
+    OnTimer = HeartBeatOnTime
+    Left = 168
+    Top = 470
+  end
+  object Timer: TTimer
+    Enabled = False
+    OnTimer = TimerOnTimer
+    Left = 168
+    Top = 422
+  end
+end
